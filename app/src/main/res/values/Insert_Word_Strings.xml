@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="insert_word_title">단어입력</string>
+    <string name="insert_word_word">단어 : </string>
+    <string name="insert_word_mean">의미 : </string>
+    <string name="insert_word_memo">메모 : </string>
+    <string name="insert_word_check">등록</string>
+    <string name="insert_word_cancel">취소</string>
+
+</resources>
