@@ -5,20 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.yoon.word.MainActivity">
+    tools:context="com.example.yoon.word.DeleteWord">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:text="단어 목록"
-        android:background="#6B66FF"
-        android:textSize="40sp"
-        android:textColor="#FFE400"/>
+        android:textSize="20sp"/>
 
     <ListView
         android:id="@+id/word_list"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"></ListView>
+        android:layout_height="fill_parent"
+        android:background="#FFF" />
+
 
 </LinearLayout>

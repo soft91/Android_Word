@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.yoon.word.InsertWord">
+    tools:context="com.example.yoon.word.UpdateWord">
 
     <TextView
-        android:id="@+id/insertWord_title"
+        android:id="@+id/updateWord_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="20sp"
         android:paddingTop="10sp"
-        android:text="@string/insert_word_title"
+        android:text="@string/updateWord_title"
         android:textSize="50sp" />
 
     <LinearLayout
@@ -30,13 +30,14 @@
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/insertWord_word"
+            android:id="@+id/updateWord_word"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10sp"
             android:hint="단어를 입력해주세요."
             android:inputType="text"
-            android:maxLength="10" />
+            android:maxLength="10"
+            android:textSize="25sp"/>
 
     </LinearLayout>
 
@@ -54,13 +55,14 @@
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/insertWord_mean"
+            android:id="@+id/updateWord_mean"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10sp"
             android:hint="의미를 입력해주세요."
             android:inputType="text"
-            android:maxLength="10" />
+            android:maxLength="10"
+            android:textSize="25sp"/>
 
     </LinearLayout>
 
@@ -78,7 +80,7 @@
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/insertWord_memo"
+            android:id="@+id/updateWord_memo"
             android:layout_width="200dp"
             android:layout_height="180dp"
             android:layout_marginLeft="10sp"
@@ -95,18 +97,18 @@
         android:paddingTop="10sp">
 
         <Button
-            android:id="@+id/InsertWord_check"
+            android:id="@+id/updateWord_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/insert_word_check"
-            android:onClick="Insert"/>
+            android:text="@string/updateWord_check"
+            android:onClick="update"/>
 
         <Button
-            android:id="@+id/InsertWord_cancel"
+            android:id="@+id/updateWord_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/insert_word_cancel"
-            android:onClick="Insert"/>
+            android:text="@string/updateWord_cancel"
+            android:onClick="update"/>
     </LinearLayout>
 
 </LinearLayout>

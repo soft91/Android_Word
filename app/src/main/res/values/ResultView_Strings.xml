@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="resultView_update">수정</string>
+    <string name="resultView_cancel">취소</string>
+
+</resources>

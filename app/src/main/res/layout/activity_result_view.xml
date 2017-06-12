@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.yoon.word.InsertWord">
+    tools:context="com.example.yoon.word.ResultView">
 
     <TextView
-        android:id="@+id/insertWord_title"
+        android:paddingBottom="30dp"
+        android:id="@+id/resultView_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="20sp"
@@ -21,7 +22,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingLeft="20sp"
-        android:paddingTop="10sp">
+        android:paddingTop="10sp"
+        android:paddingBottom="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,18 +31,17 @@
             android:text="@string/insert_word_word"
             android:textSize="25sp" />
 
-        <EditText
-            android:id="@+id/insertWord_word"
+        <TextView
+            android:id="@+id/resultView_word"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10sp"
-            android:hint="단어를 입력해주세요."
-            android:inputType="text"
-            android:maxLength="10" />
+            android:textSize="25sp"/>
 
     </LinearLayout>
 
     <LinearLayout
+        android:paddingBottom="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -53,14 +54,12 @@
             android:text="@string/insert_word_mean"
             android:textSize="25sp" />
 
-        <EditText
-            android:id="@+id/insertWord_mean"
+        <TextView
+            android:id="@+id/resultView_mean"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10sp"
-            android:hint="의미를 입력해주세요."
-            android:inputType="text"
-            android:maxLength="10" />
+            android:textSize="25sp"/>
 
     </LinearLayout>
 
@@ -77,13 +76,12 @@
             android:text="@string/insert_word_memo"
             android:textSize="25sp" />
 
-        <EditText
-            android:id="@+id/insertWord_memo"
-            android:layout_width="200dp"
-            android:layout_height="180dp"
+        <TextView
+            android:id="@+id/resultView_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10sp"
-            android:hint="메모를 입력해주세요."
-            android:inputType="none" />
+            android:textSize="25sp"/>
 
     </LinearLayout>
 
@@ -95,18 +93,18 @@
         android:paddingTop="10sp">
 
         <Button
-            android:id="@+id/InsertWord_check"
+            android:id="@+id/resultView_update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/insert_word_check"
-            android:onClick="Insert"/>
+            android:text="@string/resultView_update"
+            android:onClick="update"/>
 
         <Button
-            android:id="@+id/InsertWord_cancel"
+            android:id="@+id/resultView_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/insert_word_cancel"
-            android:onClick="Insert"/>
+            android:text="@string/resultView_cancel"
+            android:onClick="update"/>
     </LinearLayout>
 
 </LinearLayout>
